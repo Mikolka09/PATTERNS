@@ -121,6 +121,7 @@ class Car
 	Engine* engine = nullptr;
 	Transmission* transmission = nullptr;
 	BodyType* bodytype = nullptr;
+	string name;
 public:
 	Car() {}
 	~Car()
@@ -135,11 +136,13 @@ public:
 	void setEngine(Engine* en) { engine = en; }
 	void setTransmission(Transmission* tm) { transmission = tm; }
 	void setBodyType(BodyType* bt) { bodytype = bt; }
+	void setName(string n) { name = n; }
 	void print()
 	{
-		cout << "Engine: " << engine->getName() << endl;
+		cout << "Name:         " << name << endl;
+		cout << "Engine:       " << engine->getName() << endl;
 		cout << "Transmission: " << transmission->getName() << endl;
-		cout << "BodyType: " << bodytype->getName() << endl;
+		cout << "BodyType:     " << bodytype->getName() << endl;
 	}
 };
 
@@ -149,22 +152,25 @@ public:
 	virtual Engine* createEngine() = 0;
 	virtual Transmission* createTransmission() = 0;
 	virtual BodyType* createBodyType() = 0;
+	virtual string createName() = 0;
 };
 
 class SportCar :public ICarFactory
 {
 public:
-	virtual Engine* createEngine() { return new GasEngine; }
-	virtual Transmission* createTransmission() { return new RobotTransmission; }
-	virtual BodyType* createBodyType() { return new BolidBodyType; }
+	Engine* createEngine() override { return new GasEngine; }
+	Transmission* createTransmission() override { return new RobotTransmission; }
+	BodyType* createBodyType() override { return new BolidBodyType; }
+	string createName() override { return "Sport Car"; }
+
 };
 
 class Telega :public ICarFactory
 {
 public:
-	virtual Engine* createEngine() {  }
-	virtual Transmission* createTransmission() {  }
-	virtual BodyType* createBodyType() { return new BolidBodyType; }
+	Engine* createEngine() override {  }
+	Transmission* createTransmission() override {  }
+	BodyType* createBodyType() override { return new BolidBodyType; }
 };
 
 class CarConfigurator
@@ -172,10 +178,11 @@ class CarConfigurator
 	ICarFactory* factory = nullptr;
 public:
 	~CarConfigurator() { delete factory; }
-	CarConfigurator(ICarFactory* f) : factory(f){}
+	CarConfigurator(ICarFactory* f) : factory(f) {}
 	void setConfiguration(ICarFactory* f) { factory = f; }
 	void configurate(Car* car)
 	{
+		car->setName(factory->createName());
 		car->setEngine(factory->createEngine());
 		car->setTransmission(factory->createTransmission());
 		car->setBodyType(factory->createBodyType());

@@ -15,9 +15,8 @@ int main()
 	config->configurate(car);
 
 	car->print();
-
+	cout << endl;
 
 	
-
 	system("pause");
 }
