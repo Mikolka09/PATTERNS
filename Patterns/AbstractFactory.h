@@ -188,3 +188,13 @@ public:
 		car->setBodyType(factory->createBodyType());
 	}
 };
+
+
+
+//Car* car = new Car;
+//CarConfigurator* config = new CarConfigurator(new SportCar);
+////config->setConfiguration(new SportCar);
+//config->configurate(car);
+
+//car->print();
+//cout << endl;
