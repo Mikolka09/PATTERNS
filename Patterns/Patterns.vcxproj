@@ -123,7 +123,10 @@
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h" />
     <ClInclude Include="Builder.h" />
+    <ClInclude Include="Decorator.h" />
     <ClInclude Include="FactoryMethod.h" />
+    <ClInclude Include="Prototype.h" />
+    <ClInclude Include="Singelton.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

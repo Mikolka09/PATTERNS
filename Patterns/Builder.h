@@ -195,3 +195,25 @@ public:
 		builder->createCD();
 	}
 };
+
+
+
+//Director* director = new Director();
+//MusicCenterBuilder* builderMC = new MusicCenterBuilder;
+//director->setBuilder(builderMC);
+//director->BuildMaxiMC();
+//
+///*builderMC->createRadio();
+//builderMC->createBR();
+//builderMC->createSW();
+//builderMC->createSW();*/
+//
+//MusicCenter* mc = builderMC->getResult();
+//mc->print();
+//
+//ManualBuilder* builderManual = new ManualBuilder;
+//director->setBuilder(builderManual);
+//director->BuildMaxiMC();
+//
+//Manual* manual = builderManual->getResult();
+//cout << manual->getText() << endl;

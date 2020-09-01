@@ -4,35 +4,29 @@
 #include"FactoryMethod.h"
 #include"AbstractFactory.h"
 #include"Builder.h"
+#include"Singelton.h"
+#include"Prototype.h"
+#include"Decorator.h"
 
 using namespace std;
+
+
 
 int main()
 {
 	setlocale(0, "");
 
+	Pizza* pizza1 = new ItalianPizza;
+	pizza1 = new Tomato(pizza1);
+	pizza1 = new Chees(pizza1);
 	
-	Director* director = new Director();
-	MusicCenterBuilder* builderMC = new MusicCenterBuilder;
-	director->setBuilder(builderMC);
-	director->BuildMaxiMC();
-
-	/*builderMC->createRadio();
-	builderMC->createBR();
-	builderMC->createSW();
-	builderMC->createSW();*/
-
-	MusicCenter* mc = builderMC->getResult();
-	mc->print();
-
-	ManualBuilder* builderManual = new ManualBuilder;
-	director->setBuilder(builderManual);
-	director->BuildMaxiMC();
-
-	Manual* manual = builderManual->getResult();
-	cout << manual->getText() << endl;
 
 
+
+	cout << pizza1->getName() << endl;
+	cout << "Цена: " << pizza1->getCoast() << endl;
 	
+
+
 	system("pause");
 }
