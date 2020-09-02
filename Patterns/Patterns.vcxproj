@@ -122,7 +122,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h" />
+    <ClInclude Include="Adapter.h" />
+    <ClInclude Include="Bridge.h" />
     <ClInclude Include="Builder.h" />
+    <ClInclude Include="Composit.h" />
     <ClInclude Include="Decorator.h" />
     <ClInclude Include="FactoryMethod.h" />
     <ClInclude Include="Prototype.h" />

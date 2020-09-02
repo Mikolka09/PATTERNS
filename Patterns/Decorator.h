@@ -73,3 +73,21 @@ public:
 //pizza1 = new Chees(pizza1);
 //cout << pizza1->getName() << endl;
 //cout << "Цена: " << pizza1->getCoast() << endl;
+
+
+//stack<Pizza*> st;
+//Pizza* pizza1 = new ItalianPizza;
+//st.push(pizza1);
+//pizza1 = new Tomato(pizza1);
+//st.push(pizza1);
+//
+//pizza1 = new Cheese(pizza1);
+//st.push(pizza1);
+//
+//
+//cout << st.top()->getName() << endl;
+//cout << ": " << st.top()->getCoast() << endl;
+//
+//st.pop();
+//cout << st.top()->getName() << endl;
+//cout << ": " << st.top()->getCoast() << endl;
