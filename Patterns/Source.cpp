@@ -11,6 +11,10 @@
 #include"Adapter.h"
 #include"Bridge.h"
 #include"Composit.h"
+#include"Facade.h"
+#include"Flyweight.h"
+#include "Proxy.h"
+#include"State.h"
 
 using namespace std;
 
@@ -20,6 +24,7 @@ int main()
 {
 	setlocale(0, "");
 
+	
 	
 
 	

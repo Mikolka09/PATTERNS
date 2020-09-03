@@ -127,9 +127,13 @@
     <ClInclude Include="Builder.h" />
     <ClInclude Include="Composit.h" />
     <ClInclude Include="Decorator.h" />
+    <ClInclude Include="Facade.h" />
     <ClInclude Include="FactoryMethod.h" />
+    <ClInclude Include="Flyweight.h" />
     <ClInclude Include="Prototype.h" />
+    <ClInclude Include="Proxy.h" />
     <ClInclude Include="Singelton.h" />
+    <ClInclude Include="State.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
