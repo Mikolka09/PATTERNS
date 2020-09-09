@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include<iostream>
 #include<string>
@@ -29,7 +29,7 @@ public:
 
 	string getPage(int key) override
 	{
-		cout << "Âçÿòîå èç áàçû" << endl;
+		cout << "Ð’Ð·ÑÑ‚Ð¾Ðµ Ð¸Ð· Ð±Ð°Ð·Ñ‹" << endl;
 		if (pages.count(key))
 			return pages[key];
 		else
@@ -46,7 +46,7 @@ public:
 	{
 		if (cash.count(key))
 		{
-			cout << "Âçÿòîå ñ êýøà" << endl;
+			cout << "Ð’Ð·ÑÑ‚Ð¾Ðµ Ñ ÐºÑÑˆÐ°" << endl;
 			return cash[key];
 		}
 		else
@@ -66,7 +66,7 @@ public:
 //int i = 1;
 //while (i)
 //{
-//	cout << "Ñòðàíèöà: ";
+//	cout << "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°: ";
 //	cin >> i;
 //	cout << dbproxy->getPage(i) << endl;
 //}

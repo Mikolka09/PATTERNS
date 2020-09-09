@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include<iostream>
 #include<string>
 
@@ -21,11 +21,11 @@ class Track :public Transport
 public:
 	void delivery(string adress)override
 	{
-		cout << "Ãðóç äîñòàâëåí ïî àäðåñó " << adress << endl;
+		cout << "Ð“Ñ€ÑƒÐ· Ð´Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½ Ð¿Ð¾ Ð°Ð´Ñ€ÐµÑÑƒ " << adress << endl;
 	}
 	string getName()
 	{
-		return "Èñïîëüçîâàí ãðóçîâèê, ";
+		return "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½ Ð³Ñ€ÑƒÐ·Ð¾Ð²Ð¸Ðº, ";
 	}
 };
 
@@ -34,11 +34,11 @@ class Ship :public Transport
 public:
 	void delivery(string adress)override
 	{
-		cout << "Ãðóç äîñòàâëåí ïî àäðåñó " << adress << endl;
+		cout << "Ð“Ñ€ÑƒÐ· Ð´Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½ Ð¿Ð¾ Ð°Ð´Ñ€ÐµÑÑƒ " << adress << endl;
 	}
 	string getName()
 	{
-		return "Èñïîëüçîâàí êîðàáëü, ";
+		return "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½ ÐºÐ¾Ñ€Ð°Ð±Ð»ÑŒ, ";
 	}
 };
 
@@ -47,11 +47,11 @@ class Plan :public Transport
 public:
 	void delivery(string adress)override
 	{
-		cout << "Ãðóç äîñòàâëåí ïî àäðåñó " << adress << endl;
+		cout << "Ð“Ñ€ÑƒÐ· Ð´Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½ Ð¿Ð¾ Ð°Ð´Ñ€ÐµÑÑƒ " << adress << endl;
 	}
 	string getName()
 	{
-		return "Èñïîëüçîâàí ñàìîëåò, ";
+		return "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½ ÑÐ°Ð¼Ð¾Ð»ÐµÑ‚, ";
 	}
 };
 

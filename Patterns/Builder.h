@@ -1,4 +1,4 @@
-#pragma once
+Ôªø#pragma once
 
 #include<iostream>
 #include<string>
@@ -149,19 +149,19 @@ public:
 
 	void createRadio() const override
 	{
-		manual->addText("ƒÎˇ ‚ÍÎ˛˜ÂÌËˇ ‡‰ËÓ Ì‡ÊÏËÚÂ 2\n");
+		manual->addText("–î–ª—è –≤–∫–ª—é—á–µ–Ω–∏—è —Ä–∞–¥–∏–æ –Ω–∞–∂–º–∏—Ç–µ 2\n");
 	}
 	void createCD() const override
 	{
-		manual->addText("ƒÎˇ ‚ÍÎ˛˜ÂÌËˇ —ƒ Ì‡ÊÏËÚÂ 4, Á‡ÚÂÏ 6\n");
+		manual->addText("–î–ª—è –≤–∫–ª—é—á–µ–Ω–∏—è –°–î –Ω–∞–∂–º–∏—Ç–µ 4, –∑–∞—Ç–µ–º 6\n");
 	}
 	void createBR() const override
 	{
-		manual->addText("ƒÎˇ ‚ÍÎ˛˜ÂÌËˇ ¡– Ì‡ÊÏËÚÂ 5, ÔÓ‰ÂÊËÚÂ Ë ÓÚÔÛÒÚËÚÂ\n");
+		manual->addText("–î–ª—è –≤–∫–ª—é—á–µ–Ω–∏—è –ë–† –Ω–∞–∂–º–∏—Ç–µ 5, –ø–æ–¥–µ—Ä–∂–∏—Ç–µ –∏ –æ—Ç–ø—É—Å—Ç–∏—Ç–µ\n");
 	}
 	void createSW() const override
 	{
-		manual->addText("ƒÎˇ ‚ÍÎ˛˜ÂÌËˇ —¬ Ì‡ÊÏËÚÂ 8\n");
+		manual->addText("–î–ª—è –≤–∫–ª—é—á–µ–Ω–∏—è –°–í –Ω–∞–∂–º–∏—Ç–µ 8\n");
 	}
 
 	Manual* getResult()

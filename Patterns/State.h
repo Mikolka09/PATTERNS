@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include<iostream>
 #include<string>
@@ -44,7 +44,7 @@ public:
 	
 	void frost(Water* water) override
 	{
-		cout << "Ïðîäîëæàåì çàìîðàæèâàòü ëåä" << endl;
+		cout << "ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð°ÐµÐ¼ Ð·Ð°Ð¼Ð¾Ñ€Ð°Ð¶Ð¸Ð²Ð°Ñ‚ÑŒ Ð»ÐµÐ´" << endl;
 	}
 };
 
@@ -55,7 +55,7 @@ public:
 	
 	void frost(Water* water) override
 	{
-		cout << "Âîäà ïðåâðàùàåòñÿ â ëåä" << endl;
+		cout << "Ð’Ð¾Ð´Ð° Ð¿Ñ€ÐµÐ²Ñ€Ð°Ñ‰Ð°ÐµÑ‚ÑÑ Ð² Ð»ÐµÐ´" << endl;
 		water->setState(new SolidWaterState);
 	}
 };
@@ -65,24 +65,24 @@ class GasWaterState : public IWaterState
 public:
 	void heat(Water* water) override
 	{
-		cout << "Ïîâûøàåì òåìïåðàòóðó ïàðà" << endl;
+		cout << "ÐŸÐ¾Ð²Ñ‹ÑˆÐ°ÐµÐ¼ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñƒ Ð¿Ð°Ñ€Ð°" << endl;
 	}
 	void frost(Water* water) override
 	{
-		cout << "Ïàð êîíäåíñèðóåòñÿ" << endl;
+		cout << "ÐŸÐ°Ñ€ ÐºÐ¾Ð½Ð´ÐµÐ½ÑÐ¸Ñ€ÑƒÐµÑ‚ÑÑ" << endl;
 		water->setState(new LiquidWaterState);
 	}
 };
 
 void SolidWaterState::heat(Water* water)
 {
-	cout << "Ëåä ïëàâèòñÿ" << endl;
+	cout << "Ð›ÐµÐ´ Ð¿Ð»Ð°Ð²Ð¸Ñ‚ÑÑ" << endl;
 	water->setState(new LiquidWaterState);
 }
 
 void LiquidWaterState::heat(Water* water)
 {
-	cout << "Âîäà ïðåâðàùàåòñÿ â ïàð" << endl;
+	cout << "Ð’Ð¾Ð´Ð° Ð¿Ñ€ÐµÐ²Ñ€Ð°Ñ‰Ð°ÐµÑ‚ÑÑ Ð² Ð¿Ð°Ñ€" << endl;
 	water->setState(new GasWaterState);
 }
 

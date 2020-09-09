@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include<iostream>
 #include<string>
@@ -42,7 +42,7 @@ public:
 		if (sum > 1000)
 			nextHandler->sendPayment(sum);
 		else
-			cout << "Ïëàòåæ ïðîâåäåí ýêîíîìèñòîì!" << endl;
+			cout << "ÐŸÐ»Ð°Ñ‚ÐµÐ¶ Ð¿Ñ€Ð¾Ð²ÐµÐ´ÐµÐ½ ÑÐºÐ¾Ð½Ð¾Ð¼Ð¸ÑÑ‚Ð¾Ð¼!" << endl;
 	}
 
 };
@@ -59,7 +59,7 @@ public:
 		if (sum > 5000)
 			nextHandler->sendPayment(sum);
 		else
-			cout << "Ïëàòåæ ïðîâåäåí áóõãàëòåðîì!" << endl;
+			cout << "ÐŸÐ»Ð°Ñ‚ÐµÐ¶ Ð¿Ñ€Ð¾Ð²ÐµÐ´ÐµÐ½ Ð±ÑƒÑ…Ð³Ð°Ð»Ñ‚ÐµÑ€Ð¾Ð¼!" << endl;
 	}
 
 };
@@ -77,10 +77,10 @@ public:
 			if (nextHandler)
 				nextHandler->sendPayment(sum);
 			else
-				cout << "Íóæåí ñîâåò äèðåêòîðîâ, à ó íàñ åãî íåò!" << endl;
+				cout << "ÐÑƒÐ¶ÐµÐ½ ÑÐ¾Ð²ÐµÑ‚ Ð´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð¾Ð², Ð° Ñƒ Ð½Ð°Ñ ÐµÐ³Ð¾ Ð½ÐµÑ‚!" << endl;
 		}
 		else
-			cout << "Ïëàòåæ ïðîâåäåí äèðåêòîðîì!" << endl;
+			cout << "ÐŸÐ»Ð°Ñ‚ÐµÐ¶ Ð¿Ñ€Ð¾Ð²ÐµÐ´ÐµÐ½ Ð´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð¾Ð¼!" << endl;
 	}
 
 };

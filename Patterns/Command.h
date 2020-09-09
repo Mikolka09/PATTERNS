@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include<iostream>
 #include<string>
@@ -69,7 +69,7 @@ class Multivarka
 public:
 	void start(int t)
 	{
-		cout << "Ãîòîâèì åäó!" << endl;
+		cout << "Ð“Ð¾Ñ‚Ð¾Ð²Ð¸Ð¼ ÐµÐ´Ñƒ!" << endl;
 		for (size_t i = 0; i < t; i++)
 		{
 			cout << ".";
@@ -79,7 +79,7 @@ public:
 	}
 	void stop()
 	{
-		cout << "Åäà ãîòîâà!" << endl;
+		cout << "Ð•Ð´Ð° Ð³Ð¾Ñ‚Ð¾Ð²Ð°!" << endl;
 	}
 };
 

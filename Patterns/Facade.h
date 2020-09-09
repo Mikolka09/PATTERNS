@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include<iostream>
 #include<string>
@@ -11,12 +11,12 @@ class TextEditor
 public:
 	void createCode()
 	{
-		cout << "Íàïèñàíèå êîäà" << endl;
+		cout << "ÐÐ°Ð¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐºÐ¾Ð´Ð°" << endl;
 	}
 
 	void save()
 	{
-		cout << "Ñîõðàíåíèå êîäà" << endl;
+		cout << "Ð¡Ð¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ðµ ÐºÐ¾Ð´Ð°" << endl;
 	}
 };
 
@@ -25,7 +25,7 @@ class Compiller
 public:
 	void compile()
 	{
-		cout << "Êîìïèëÿöèÿ ïðèëîæåíèÿ" << endl;
+		cout << "ÐšÐ¾Ð¼Ð¿Ð¸Ð»ÑÑ†Ð¸Ñ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ" << endl;
 	}
 };
 
@@ -34,12 +34,12 @@ class Debugger
 public:
 	void execute()
 	{
-		cout << "Âêëþ÷åíèÿ ðåæèìà îòëàäêè è çàïóñê" << endl;
+		cout << "Ð’ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ñ€ÐµÐ¶Ð¸Ð¼Ð° Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸ Ð¸ Ð·Ð°Ð¿ÑƒÑÐº" << endl;
 	}
 
 	void finish()
 	{
-		cout << "Çàêðûòèå ïðèëîæåíèÿ" << endl;
+		cout << "Ð—Ð°ÐºÑ€Ñ‹Ñ‚Ð¸Ðµ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ" << endl;
 	}
 };
 

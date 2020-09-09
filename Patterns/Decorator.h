@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include<iostream>
 #include<string>
@@ -17,7 +17,7 @@ public:
 class ItalianPizza :public Pizza
 {
 public:
-	ItalianPizza() :Pizza("Èòàëüÿíñêàÿ ïèööà"){}
+	ItalianPizza() :Pizza("Ð˜Ñ‚Ð°Ð»ÑŒÑÐ½ÑÐºÐ°Ñ Ð¿Ð¸Ñ†Ñ†Ð°"){}
 	int getCoast() override
 	{
 		return 100;
@@ -27,7 +27,7 @@ public:
 class UkranianPizza :public Pizza
 {
 public:
-	UkranianPizza() :Pizza("Óêðàèíñêàÿ ïèööà") {}
+	UkranianPizza() :Pizza("Ð£ÐºÑ€Ð°Ð¸Ð½ÑÐºÐ°Ñ Ð¿Ð¸Ñ†Ñ†Ð°") {}
 	int getCoast() override
 	{
 		return 150;
@@ -47,7 +47,7 @@ public:
 class Tomato :public PizzaDecorator
 {
 public:
-	Tomato(Pizza* p):PizzaDecorator(p->getName()+", ñ ïîìèäîðàìè", p){}
+	Tomato(Pizza* p):PizzaDecorator(p->getName()+", Ñ Ð¿Ð¾Ð¼Ð¸Ð´Ð¾Ñ€Ð°Ð¼Ð¸", p){}
 	int getCoast() override
 	{
 		return pizza->getCoast() + 20;
@@ -58,7 +58,7 @@ public:
 class Chees :public PizzaDecorator
 {
 public:
-	Chees(Pizza* p) :PizzaDecorator(p->getName() + ", ñ ñûðîì", p) {}
+	Chees(Pizza* p) :PizzaDecorator(p->getName() + ", Ñ ÑÑ‹Ñ€Ð¾Ð¼", p) {}
 	int getCoast() override
 	{
 		return pizza->getCoast() + 30;
@@ -72,7 +72,7 @@ public:
 //pizza1 = new Tomato(pizza1);
 //pizza1 = new Chees(pizza1);
 //cout << pizza1->getName() << endl;
-//cout << "Öåíà: " << pizza1->getCoast() << endl;
+//cout << "Ð¦ÐµÐ½Ð°: " << pizza1->getCoast() << endl;
 
 
 //stack<Pizza*> st;

@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include<iostream>
 #include<string>
@@ -36,7 +36,7 @@ public:
 	SellerCollegue(Mediator* mediator):Collegue(mediator){}
 	void notify(string message) override
 	{
-		cout << "��������� ��������: " << message << endl;
+		cout << "Сообщение продавцу: " << message << endl;
 	}
 };
 
@@ -46,7 +46,7 @@ public:
 	ProgrammerCollegue(Mediator* mediator) : Collegue(mediator) {}
 	void notify(string message) override
 	{
-		cout << "��������� ������������: : " << message << endl;
+		cout << "Сообщение программисту: : " << message << endl;
 	}
 };
 
@@ -56,7 +56,7 @@ public:
 	TesterCollegue(Mediator* mediator) : Collegue(mediator) {}
 	void notify(string message) override
 	{
-		cout << "��������� ������������: : " << message << endl;
+		cout << "Сообщение тестировщику: : " << message << endl;
 	}
 };
 
@@ -76,3 +76,17 @@ public:
 			seller->notify(message);
 	}
 };
+
+
+//ManagerMediator* manager = new ManagerMediator;
+//Collegue* seller = new SellerCollegue(manager);
+//Collegue* programmer = new ProgrammerCollegue(manager);
+//Collegue* tester = new TesterCollegue(manager);
+//
+//manager->seller = seller;
+//manager->programmer = programmer;
+//manager->tester = tester;
+//
+//seller->send("Есть заказ, нужно сделать программу!");
+//programmer->send("Программа готова, можно тестить!");
+//tester->send("Программа протестирована, можно продавать!");

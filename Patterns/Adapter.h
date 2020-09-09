@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include<iostream>
 #include<string>
@@ -19,7 +19,7 @@ namespace Adapter
 	public:
 		void drive()
 		{
-			cout << "Ìàøèíà åäåò" << endl;
+			cout << "ÐœÐ°ÑˆÐ¸Ð½Ð° ÐµÐ´ÐµÑ‚" << endl;
 		}
 
 	};
@@ -40,7 +40,7 @@ namespace Adapter
 	public:
 		void move()
 		{
-			cout << "Âåðáëþä èäåò ïî ïóñòûíå" << endl;
+			cout << "Ð’ÐµÑ€Ð±Ð»ÑŽÐ´ Ð¸Ð´ÐµÑ‚ Ð¿Ð¾ Ð¿ÑƒÑÑ‚Ñ‹Ð½Ðµ" << endl;
 		}
 	};
 
@@ -49,7 +49,7 @@ namespace Adapter
 	public:
 		void swimm()
 		{
-			cout << "Êîðàáûëü ïëûâåò" << endl;
+			cout << "ÐšÐ¾Ñ€Ð°Ð±Ñ‹Ð»ÑŒ Ð¿Ð»Ñ‹Ð²ÐµÑ‚" << endl;
 		}
 	};
 
