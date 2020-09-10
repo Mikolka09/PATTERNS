@@ -21,6 +21,9 @@
 #include"Strategy.h"
 #include"Observer.h"
 #include"Memento.h"
+#include"Visitor.h"
+#include"TemplateMethod.h"
+#include"Interpretator.h"
 
 using namespace std;
 
@@ -30,6 +33,15 @@ int main()
 {
 	setlocale(0, "");
 
+	RNInterpreter interpreter;
+	char input[20];
+	cout << "Enter Roman Numeral: ";
+	while (cin >> input)
+	{
+		cout << "   interpretation is "
+			<< interpreter.interpret(input) << endl;
+		cout << "Enter Roman Numeral: ";
+	}
 	
 
 	cout << endl;

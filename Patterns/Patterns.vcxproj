@@ -132,6 +132,7 @@
     <ClInclude Include="Facade.h" />
     <ClInclude Include="FactoryMethod.h" />
     <ClInclude Include="Flyweight.h" />
+    <ClInclude Include="Interpretator.h" />
     <ClInclude Include="Mediator.h" />
     <ClInclude Include="Memento.h" />
     <ClInclude Include="Observer.h" />
@@ -140,6 +141,8 @@
     <ClInclude Include="Singelton.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="Strategy.h" />
+    <ClInclude Include="TemplateMethod.h" />
+    <ClInclude Include="Visitor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
