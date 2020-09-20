@@ -33,16 +33,9 @@ int main()
 {
 	setlocale(0, "");
 
-	RNInterpreter interpreter;
-	char input[20];
-	cout << "Enter Roman Numeral: ";
-	while (cin >> input)
-	{
-		cout << "   interpretation is "
-			<< interpreter.interpret(input) << endl;
-		cout << "Enter Roman Numeral: ";
-	}
 	
+
+
 
 	cout << endl;
 	system("pause");
